@@ -1,0 +1,61 @@
+📌 Descrição formal do robô
+
+O robô é um manipulador seriado com 5 graus de liberdade (5 DOF), formado por cinco juntas rotacionais (R), dispostas em sequência a partir de uma base fixa no solo.
+
+Sistema de coordenadas
+
+O eixo Z está orientado para cima (vertical).
+
+O eixo X aponta para frente (horizonte do robô).
+
+O eixo Y aponta para o lado (direita/esquerda).
+
+Estrutura do manipulador
+
+Junta 1 (Rz):
+
+Primeira junta localizada na base.
+
+Rotaciona o braço em torno do eixo Z.
+
+Função: movimenta o braço no plano horizontal (giro da base).
+
+Junta 2 (Rx):
+
+Conectada ao elo da junta 1.
+
+Rotaciona em torno do eixo X.
+
+Função: atua como um “ombro”, inclinando o braço para frente/trás.
+
+Junta 3 (Rx):
+
+Conectada ao elo da junta 2.
+
+Rotaciona em torno do eixo X.
+
+Função: adiciona mais alcance e flexibilidade, como o movimento de cotovelo.
+
+Junta 4 (Rx):
+
+Conectada ao elo da junta 3.
+
+Rotaciona em torno do eixo X.
+
+Função: proporciona maior controle da orientação do segmento terminal, semelhante a um punho que inclina para frente/trás.
+
+Junta 5 (Ry):
+
+Conectada ao elo da junta 4.
+
+Rotaciona em torno do eixo Y.
+
+Função: complementa a orientação do efetuador, permitindo rotação lateral.
+
+Observações adicionais
+
+Elo entre juntas: cada junta está conectada à próxima por um elo de comprimento definido, permitindo espaçamento físico entre os eixos de rotação.
+
+O manipulador é do tipo R–R–R–R–R (todas as juntas rotacionais).
+
+Graus de liberdade (DOF): 5 → suficiente para controle de posição em 3D e orientação parcial do efetuador.
